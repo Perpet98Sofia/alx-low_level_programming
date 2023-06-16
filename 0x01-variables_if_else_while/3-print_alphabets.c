@@ -14,7 +14,7 @@ c = 'A'; /*declare char C to be 'A'*/
 
 while (c <= 'z' /*while 'a' less than 'z'*/
 {
-putchar (c)/*output a char to stdout */
+putchar (c); /*output a char to stdout */
 c++; /*increment this operand by one until reaching z*/
 }
 while (C <= 'Z') /*while 'A' less than 'Z'*/
