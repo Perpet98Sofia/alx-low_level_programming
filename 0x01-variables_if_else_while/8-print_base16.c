@@ -7,22 +7,22 @@
 
 int main(void)
 {
-int n = '0';
-	int a_to_f = 'a';
+char a;
+char b;
 
-	while (n <= '9') /*print 0-9*/
-	{
-		putchar(n);
-		n++;
-	}
+a = 48; /* 48 corresponds with 0 on ASCII chart */
+b = 97; /* 97 corresponds with a on ASCII chart */
 
-	while (a_to_f <= 'f') /*print a-f to finish hexbase*/
-	{
-		putchar(a_to_f);
-		a_to_f++;
-	}
-
-	putchar('\n');
-
-	return (0);
+while (a <= 57) /* 57 corresponds with 9 on ASCII chart*/
+{
+putchar (a); /* this function will output char starting at 48 */
+a++; /* increment putchar operand by 1 until 57 */
+}
+while (b <= 102) /* 102 corresponds with f on ASCII chart */
+{
+putchar (b); /* output char starting at 97  */
+b++; /* increment putchar operand by 1 until 102 */
+}
+putchar ('\n');
+return (0);
 }
