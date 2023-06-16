@@ -13,14 +13,14 @@ while (lowercase <= 'z')
 {
 if (lowercase == "e" || lowercase == 'q')
 {
-lowerCase += 1;
+lowercase += 1;
 }
 else
 {
-putchar(lowerCase);
-lowercase +=1;
+putchar (lowercase);
+lowercase += 1;
 }
-{
-putchar('\n');
-return(0)
+}
+putchar ('\n');
+return (0);
 }
