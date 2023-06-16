@@ -7,12 +7,15 @@
 
 int main(void)
 {
-	int num;
+int c; /*not allowed to use char variable*/
 
-	for num = (0; num < 10; num++)
-	putchar ((num % 10) + '0');
+c = 48; /*48 corresponds with 0 on ASCII chart*/
 
-	putchar ('\n');
-
-	return (0);
+while (c <= 57)
+{
+putchar (c);
+c++; /*increment operand by 1 until reaching 57*/
+}
+putchar ('\n'); /*add new line*/
+return (0);
 }
