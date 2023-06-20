@@ -4,7 +4,8 @@
  * print_sign - checks for integer sign
  * @n: integer to check
  *
- * Return: 1 for positive number, -1 for negative number otherwise prints 0 for any other
+ * Return: 1 for positive number, -1 for negative number
+ * otherwise prints 0 for any other
  */
 
 
