@@ -6,7 +6,7 @@
  * Return: 0
  */
 
-int main(void)
+int main(void);
 {
 int counter, overflow;
 unsigned long a = 1;
