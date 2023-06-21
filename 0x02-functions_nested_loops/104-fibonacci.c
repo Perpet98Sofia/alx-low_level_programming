@@ -7,6 +7,8 @@
  */
 
 int main(void);
+n=98;
+
 {
 int counter, overflow;
 unsigned long a = 1;
