@@ -1,51 +1,47 @@
-#include <stdio.h>
+#include 
 
 /**
  * main - print first 98 Fibonacci numbers without using long long, malloc,
  * pointers, array/tables, or structures
- * Return: 0
+ * return : 0 always
  */
 
-int main(void);
-n=98;
-
+int main(void)
 {
-int counter, overflow;
-unsigned long a = 1;
-unsigned long b = 1;
-unsigned long sum = 0;
-long a_head, a_tail, b_head, b_tail, sum_head, sum_tail;
+unsigned long int a, a1, a2, b, b1, b2, c, c1, c2, d, e;
 
-printf("1");
 
-for (counter = 2; counter < 93; counter++) /* will still print */
+a = 1;
+b = 2;
+c = a + b;
+
+printf("%lu, ", a);
+printf("%lu, ", b);
+for (d = 3; d < 89; d++)
 {
-sum = a + b;
+printf("%lu, ", c);
 a = b;
-b = sum;
-printf(", %lu", sum);
+b = c;
+c = a + b;
 }
+b1 = b / 1000000000;
+b2 = b % 1000000000;
+c1 = c / 1000000000;
+c2 = c % 1000000000;
 
-a_head = a / 1000000000; /* break larger num into 2 parts */
-a_tail = a % 1000000000;
-b_head = b / 1000000000;
-b_tail = b % 1000000000;
 
-for (; counter < 99; counter++)
+for (e = 89; e < 98; e++)
 {
-overflow = (a_tail + b_tail) / 1000000000;
-sum_tail = (a_tail + b_tail) -(1000000000 * overflow);
-sum_head = (a_head + b_head) +overflow;
+printf("%lu%lu, ", c1, c2);
+a1 = b1;
+a2 = b2;
+b1 = c1;
+b2 = c2;
+c1 = a1 + b1 + ((a2 + b2) / 1000000000);
 
-printf(", %lu%lu", sum_head, sum_tail);
 
-a_head = b_head;
-a_tail = b_tail;
-b_head = sum_head;
-b_tail = sum_tail;
+c2 = (a2 + b2) % 1000000000;
 }
-
-printf("\n");
-
+printf("%lu%lu\n", c1, c2);
 return (0);
 }
